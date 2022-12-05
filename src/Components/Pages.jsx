@@ -1,9 +1,9 @@
 import React from 'react'
-// import Header from './Common/Header'
+import Header from './Common/Header'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import GetStarted from './Services/GetStarted'
 import About from './About/About'
-import Contact from './Contact/Contact'
+// import Contact from './Contact/Contact'
 import Home from './Home/Home'
 import Signup from './Signup/Signup'
 import Login from './Login/Login'
@@ -33,7 +33,7 @@ const Pages = () => {
               <Route path='/' element = {<Home/>} />
               <Route path='/get-started' element = {<GetStarted/>}/> 
               <Route path='/about' element = {<About/>}/>
-              <Route path='/contact' element = {<Contact/>} />
+              {/* <Route path='/contact' element = {<Contact/>} /> */}
               <Route path='/sign-up' element = {<Signup/>} />
               <Route path='/log-in' element = {<Login/>} />
               <Route path='/dashboard/*' element = {<PrivateRouter> <Dashboard/> </PrivateRouter>} />

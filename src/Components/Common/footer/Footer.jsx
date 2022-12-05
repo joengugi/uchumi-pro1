@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { footer } from '../../data/Data'
 import './Footer.css'
 
@@ -23,11 +24,11 @@ const Footer = () => {
                     <div className="f-logo">
                         <img src='' alt='' />
                         <h2>Do you need anything? We'll help.</h2>
-                        <p>Receive updates, hot deals, tutorials, direct in your inbox.</p>
+                        {/* <p>Receive updates, hot deals, tutorials, direct in your inbox.</p> */}
                     </div>
                     <div className="f-input">
-                        <input type="text" placeholder='Email Address' name='' id='' />
-                        <button> Subscribe </button>
+                        {/* <input type="text" placeholder='Email Address' name='' id='' /> */}
+                        {/* <button> Subscribe </button> */}
                     </div>
                 </div>
 
@@ -35,9 +36,12 @@ const Footer = () => {
                     <div className="sanduku">
                         <h3>{val.title}</h3>
                         <ul>
-                            {val.text.map((items) => (
+                            <Link to="/">Home</Link>
+                            <Link to="/sign-up">Get Started</Link>
+                            <Link to="/about">About</Link>
+                            {/* {val.text.map((items) => (
                                 <li>{items.list}</li>
-                            ))}
+                            ))} */}
                         </ul>
                     </div>
                 )

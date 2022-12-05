@@ -1,6 +1,15 @@
 // import { SearchOutlined } from '@mui/icons-material'
 // import { Avatar, IconButton } from '@mui/material'
-import  * as firebase from 'firebase'
+import  {db} from "../../../firebase/firebase"
+import { 
+  getFirestore,
+  query,
+  getDocs,
+  collection,
+  where,
+  addDoc,
+
+} from "firebase/firestore"
 import React, { useEffect, useState } from 'react'
 import "./Message.css"
 
@@ -8,20 +17,20 @@ const Message = () => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
 
-  useEffect(() => {
-    firebase.firestore().collection('messages').onSnapshot((snapshot) => {
-      const messages = snapshot.docs.map((doc) => doc.data());
-      setMessages(messages);
-    });
-  }, []);
+  // useEffect(() => {
+  //   addDoc(collection(db, 'messages').onSnapshot((snapshot) => {
+  //     const messages = snapshot.docs.map((doc) => doc.data());
+  //     setMessages(messages);
+  //   }));
+  // }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    firebase.firestore().collection('messages').add({
+    addDoc(collection('messages').add({
       message: newMessage,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp()
-    })
+      timestamp: getFirestore.serverTimestamp()
+    }))
     .then(() => {setNewMessage('');})
     .catch((error) => {console.error(error);})
   }

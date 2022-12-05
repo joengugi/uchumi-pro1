@@ -73,7 +73,7 @@ const Signup = () => {
                     .then(() => { console.log("user has been registered as:", role);})
                     .catch((error) => {console.error(error)});
                 }
-                // user.updateProfile({role: role})
+                user.updateProfile({role: role})
                 
                
             })

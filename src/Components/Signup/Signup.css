@@ -59,10 +59,11 @@
 }
 .dropdown select{
    width: 45vh;
-   padding: 10px;
+   /* height: 20vh; */
+   padding: 6px;
    border-radius: 4px;
    box-sizing: border-box;
    color: black;
-   font-size: 20px;
-    font-weight: 500;
+   font-size: 18px;
+   font-weight: 500;
 }

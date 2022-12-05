@@ -2,10 +2,10 @@ import React, { Fragment, useState,useEffect } from 'react'
 import easy from "../../Common/images/snap.png"
 import free from "../../Common/images/tax-free.png"
 import extend from "../../Common/images/expand.png"
-import PostDetails from './PostDetails'
+// import PostDetails from './PostDetails'
 import { db } from '../../../firebase/firebase'
 import "./Homepage.css"
-import { collection, onSnapshot, snapshotEqual } from 'firebase/firestore'
+import { collection, onSnapshot } from 'firebase/firestore'
 
 const Homepage = () => {
 
@@ -52,7 +52,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className='posts'>
+      {/* <div className='posts'>
         <Fragment>
           <section className='e-posts'>
             <div className='centre'> <h3> Latest Posts </h3></div>
@@ -76,7 +76,7 @@ const Homepage = () => {
             </div>
           </section>
         </Fragment>
-      </div>
+      </div> */}
     </div>
   )
 }

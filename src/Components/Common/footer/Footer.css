@@ -52,11 +52,12 @@ footer h3{
     margin-bottom: 30px;
 }
 footer ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-footer ul li{
-    display: block;
-    color: grey;
+footer ul Link:hover{
+    color: white;
     margin-bottom: 20px;
 }
 

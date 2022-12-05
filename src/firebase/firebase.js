@@ -18,6 +18,7 @@ import {
     addDoc,
 
 } from "firebase/firestore"
+import { getStorage, uploadBytes, ref } from "firebase/storage"
 
 const firebaseConfig = {
     apiKey: "AIzaSyBHvoj8dEbLU4n8betfNyxhHnp87bJdaQk",
@@ -34,6 +35,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 const googleProv = new GoogleAuthProvider();
+const storage = getStorage();
 
 const signInWithGoogle = async () =>{
     try {
@@ -60,12 +62,12 @@ const signIn = async (name,email, password ) => {
     try{
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const user = res.user;
-        await addDoc(collection(db, "users"), {
-            uid: user.uid,
-            name,
-            authProvider: "email",
-            email,
-        })
+        // await addDoc(collection(db, "users"), {
+        //     uid: user.uid,
+        //     name,
+        //     authProvider: "email",
+        //     email,
+        // })
     } catch (err) {
         console.error(err);
         alert(err.message);
@@ -95,6 +97,16 @@ const logout = () => {
     signOut(auth);
 };
 
+
+export async function upload(file, currentUser,setLoading){
+    const fileRef = ref(storage, currentUser.uid + '.png');
+
+    setLoading(true)
+    const snap = await uploadBytes(fileRef, file);
+
+    setLoading(false);
+    alert("photo uploaded!")
+}
 
 export {
     auth,

@@ -3,7 +3,8 @@ import { addDoc, collection } from "firebase/firestore";
 import './Addpost.css'
 import {auth} from '../../../firebase/firebase'
 import { onAuthStateChanged } from "firebase/auth"
-import { db } from '../../../firebase/firebase';
+import { db, upload } from '../../../firebase/firebase';
+import { useAuth, } from '../../Contexts/AuthContext';
 // import { value } from "../../Contexts/AuthContext"
 
 const AddPost = () => {
@@ -11,16 +12,17 @@ const AddPost = () => {
   const [Bname, setBname] = useState("")
   const [Bcategory, setBCategory] = useState("")
   const [city, setCity] = useState("")
-  const [image, setImage] = useState("")
+  const [image, setImage] = useState(null)
   const [goal, setGoal] = useState("")
   const [profit, setProfit] = useState("")
   const [sales, setSales] = useState("")
   const [cashFlow, setCashFlow] = useState("")
   const [aqCost, setAqCost] = useState("")
   const [background, setBackground] = useState("")
+  const [photoURL, setPhotoURL] = useState("")
 
-  // const [currentUser, setCurrentUser] = useState()
-  // const [loading, setLoading] = useState(true)
+  const currentUser = useAuth();
+  const [loading, setLoading] = useState(false)
   
 
   // const [userData, setUserData] = useState({
@@ -36,15 +38,20 @@ const AddPost = () => {
   //   background: ""
 
   // const [currentUser, setCurrentUser] = useState()
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
 
-
+  useEffect(() => {
+    if (currentUser?.photoURL){
+      setPhotoURL(currentUser.photoURL)
+    }
+  }, [currentUser, photoURL])
 
   useEffect(() => {
       const unsubscribe = onAuthStateChanged( auth, (user => {
           // console.log(user.email);
           // setCurrentUser(user)
           setLoading(false)
+        
           
       }))
       return unsubscribe()
@@ -62,14 +69,26 @@ const AddPost = () => {
       Bname: Bname,
       Bcategory: Bcategory,
       city: city,
-      image: image,
+      // image: image,
       goal: goal,
       profit: profit,
       sales: sales,
       cashFlow: cashFlow,
       aqCost: aqCost,
       background: background
-    });}
+    });
+  }
+
+  const imageChange = (e) => {
+    if (e.target.files[0]) {
+      setImage(e.target.files[0])
+    }
+
+  }
+
+  const handleUpload = () => {
+    upload(image, currentUser, setLoading)
+  }
 
   // console.log(currentUser.email);
 
@@ -115,7 +134,11 @@ const AddPost = () => {
               <input type="text" placeholder = "City located" value={city} onChange= {(e) => setCity(e.target.value)}/>
 
               <label> Photo </label>
-              <input type="file" placeholder = "upload a photo" value={image} onChange= {(e) => setImage(e.target.value)}/>
+              <div className='upload'>
+                <input type="file" placeholder = "upload a photo" onChange= {imageChange}/>
+                <button disabled = {loading || !image} onClick={handleUpload}>upload</button>
+                <img src={photoURL} alt=''/>
+              </div>
 
               <h3> deeper business statistics </h3>
 

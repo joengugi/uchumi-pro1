@@ -8,7 +8,7 @@ header {
     z-index: 999;
 }
 header img {
-    height: 6vh;
+    height: 5vh;
     margin-left: 10px;
 }
 header h2{
@@ -61,8 +61,11 @@ header .toggle{
         background-color: #27ae60;
         padding: 20px;
     }
-    header li a {
-        display: inline-block;
+    header li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
         margin-bottom: 20px;
         color: #fff;
     }
