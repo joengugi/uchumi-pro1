@@ -1,29 +1,34 @@
 // import { SearchOutlined } from '@mui/icons-material'
-// import { Avatar, IconButton } from '@mui/material'
-import  * as firebase from 'firebase'
+
 import React, { useEffect, useState } from 'react'
 import "./Message.css"
+import { addDoc, collection, deleteDoc, doc, onSnapshot, orderBy, query, serverTimestamp, setDoc, updateDoc } from 'firebase/firestore';
+import { db } from '../../../firebase/firebase';
 
-const Message = () => {
+const Message = ({id}) => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
 
-  useEffect(() => {
-    firebase.firestore().collection('messages').onSnapshot((snapshot) => {
-      const messages = snapshot.docs.map((doc) => doc.data());
-      setMessages(messages);
-    });
-  }, []);
+  // useEffect(() => {
+  //   firebase.firestore().collection('messages').onSnapshot((snapshot) => {
+  //     const messages = snapshot.docs.map((doc) => doc.data());
+  //     setMessages(messages);
+  //   });
+  // }, []);
 
-  const handleSubmit = (e) => {
+  
+  const sendmessage = async(e)=>{
     e.preventDefault();
-
-    firebase.firestore().collection('messages').add({
-      message: newMessage,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    const commentTosend = newMessage;
+    setNewMessage("");
+    await addDoc(collection(db,"posts",id,"messages"),{
+      comment:commentTosend,
+      // username:userName,
+      timestamp:serverTimestamp(),
     })
-    .then(() => {setNewMessage('');})
-    .catch((error) => {console.error(error);})
+
+    // setOpenComment(false);
+
   }
   // const [seed, setSeed] = useState('')
 
@@ -35,14 +40,14 @@ const Message = () => {
     <div className='body'>
       <h2> Chats </h2>
       <div className='chat'>
-        <form onSubmit={handleSubmit}>
+        <form >
           <input
             type="text"
             placeholder='Enter message'
             onChange={(e) => setNewMessage(e.target.value)}
             value = {newMessage}
           />
-          <button type='submit'> Send </button>
+          <button type='submit' onClick={sendmessage}> Send </button>
         </form>
       </div>
 

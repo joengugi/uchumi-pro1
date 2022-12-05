@@ -21,6 +21,7 @@ import MyPosts from './Dashboard/Body/MyPosts'
 import Fullcard from './Investors/Fullcard'
 import Investors from './Investors/Investors'
 import Allposts from './Investors/Allposts'
+import DashHeader from './Dashboard/DashHeader/DashHeader'
 
 
 const Pages = () => {
@@ -28,7 +29,7 @@ const Pages = () => {
    <>
       <AuthProvider> 
         <Router> 
-        {/* <Header /> */}
+        <DashHeader/>
           <Routes>
               <Route path='/' element = {<Home/>} />
               <Route path='/get-started' element = {<GetStarted/>}/> 
