@@ -1,0 +1,68 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.innerLayout {
+    background-color: rgb(88, 248, 88);
+    height: 90vh;
+    margin: 10px 2px;
+    width: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 90vh;
+    height: 85vh;
+}
+
+.form button{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 60%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form input{
+    padding: 10px;
+    margin: 10px 0px;
+    width: 65vh;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form h4{
+    color: red;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dropdown select{
+   width: 45vh;
+   padding: 10px;
+   border-radius: 4px;
+   box-sizing: border-box;
+   color: black;
+   font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,251 @@
+[{
+  "id": 1,
+  "user_name": "Virgie",
+  "capital": "$161.14",
+  "business": "Grocery"
+}, {
+  "id": 2,
+  "user_name": "Charleen",
+  "capital": "$478.59",
+  "business": "Beauty"
+}, {
+  "id": 3,
+  "user_name": "Nancie",
+  "capital": "$259.40",
+  "business": "Books"
+}, {
+  "id": 4,
+  "user_name": "Viviyan",
+  "capital": "$433.92",
+  "business": "Computers"
+}, {
+  "id": 5,
+  "user_name": "Winona",
+  "capital": "$849.78",
+  "business": "Automotive"
+}, {
+  "id": 6,
+  "user_name": "Goldarina",
+  "capital": "$504.77",
+  "business": "Kids"
+}, {
+  "id": 7,
+  "user_name": "Janaye",
+  "capital": "$525.93",
+  "business": "Grocery"
+}, {
+  "id": 8,
+  "user_name": "Viva",
+  "capital": "$529.02",
+  "business": "Shoes"
+}, {
+  "id": 9,
+  "user_name": "Arnuad",
+  "capital": "$583.08",
+  "business": "Toys"
+}, {
+  "id": 10,
+  "user_name": "Oliviero",
+  "capital": "$528.95",
+  "business": "Jewelry"
+}, {
+  "id": 11,
+  "user_name": "Genni",
+  "capital": "$231.92",
+  "business": "Electronics"
+}, {
+  "id": 12,
+  "user_name": "Gabriel",
+  "capital": "$43.00",
+  "business": "Tools"
+}, {
+  "id": 13,
+  "user_name": "Jacklin",
+  "capital": "$87.76",
+  "business": "Beauty"
+}, {
+  "id": 14,
+  "user_name": "Mitchel",
+  "capital": "$646.55",
+  "business": "Clothing"
+}, {
+  "id": 15,
+  "user_name": "Ossie",
+  "capital": "$996.17",
+  "business": "Baby"
+}, {
+  "id": 16,
+  "user_name": "Haily",
+  "capital": "$924.04",
+  "business": "Beauty"
+}, {
+  "id": 17,
+  "user_name": "Gregg",
+  "capital": "$144.58",
+  "business": "Grocery"
+}, {
+  "id": 18,
+  "user_name": "Sanford",
+  "capital": "$244.56",
+  "business": "Movies"
+}, {
+  "id": 19,
+  "user_name": "Baillie",
+  "capital": "$994.74",
+  "business": "Beauty"
+}, {
+  "id": 20,
+  "user_name": "Shirline",
+  "capital": "$67.01",
+  "business": "Grocery"
+}, {
+  "id": 21,
+  "user_name": "Shepherd",
+  "capital": "$465.86",
+  "business": "Toys"
+}, {
+  "id": 22,
+  "user_name": "Eimile",
+  "capital": "$315.46",
+  "business": "Electronics"
+}, {
+  "id": 23,
+  "user_name": "Simeon",
+  "capital": "$473.07",
+  "business": "Industrial"
+}, {
+  "id": 24,
+  "user_name": "Damara",
+  "capital": "$149.22",
+  "business": "Health"
+}, {
+  "id": 25,
+  "user_name": "Shalne",
+  "capital": "$885.27",
+  "business": "Games"
+}, {
+  "id": 26,
+  "user_name": "Pincas",
+  "capital": "$591.76",
+  "business": "Sports"
+}, {
+  "id": 27,
+  "user_name": "Marybelle",
+  "capital": "$516.02",
+  "business": "Sports"
+}, {
+  "id": 28,
+  "user_name": "Henderson",
+  "capital": "$299.25",
+  "business": "Health"
+}, {
+  "id": 29,
+  "user_name": "Astrid",
+  "capital": "$240.14",
+  "business": "Music"
+}, {
+  "id": 30,
+  "user_name": "Bertina",
+  "capital": "$569.37",
+  "business": "Health"
+}, {
+  "id": 31,
+  "user_name": "Wynny",
+  "capital": "$341.19",
+  "business": "Music"
+}, {
+  "id": 32,
+  "user_name": "Drucill",
+  "capital": "$592.99",
+  "business": "Toys"
+}, {
+  "id": 33,
+  "user_name": "Melina",
+  "capital": "$628.01",
+  "business": "Computers"
+}, {
+  "id": 34,
+  "user_name": "Lina",
+  "capital": "$81.21",
+  "business": "Tools"
+}, {
+  "id": 35,
+  "user_name": "Clair",
+  "capital": "$271.43",
+  "business": "Beauty"
+}, {
+  "id": 36,
+  "user_name": "Alejandrina",
+  "capital": "$957.26",
+  "business": "Kids"
+}, {
+  "id": 37,
+  "user_name": "Dallis",
+  "capital": "$568.68",
+  "business": "Music"
+}, {
+  "id": 38,
+  "user_name": "Humphrey",
+  "capital": "$471.14",
+  "business": "Automotive"
+}, {
+  "id": 39,
+  "user_name": "Amalee",
+  "capital": "$864.90",
+  "business": "Computers"
+}, {
+  "id": 40,
+  "user_name": "Brockie",
+  "capital": "$103.28",
+  "business": "Outdoors"
+}, {
+  "id": 41,
+  "user_name": "Mattie",
+  "capital": "$666.97",
+  "business": "Games"
+}, {
+  "id": 42,
+  "user_name": "Kaspar",
+  "capital": "$494.77",
+  "business": "Shoes"
+}, {
+  "id": 43,
+  "user_name": "Myrvyn",
+  "capital": "$351.70",
+  "business": "Toys"
+}, {
+  "id": 44,
+  "user_name": "Chevalier",
+  "capital": "$201.53",
+  "business": "Beauty"
+}, {
+  "id": 45,
+  "user_name": "Herrick",
+  "capital": "$362.05",
+  "business": "Music"
+}, {
+  "id": 46,
+  "user_name": "Lazarus",
+  "capital": "$804.42",
+  "business": "Kids"
+}, {
+  "id": 47,
+  "user_name": "Jaymee",
+  "capital": "$800.92",
+  "business": "Beauty"
+}, {
+  "id": 48,
+  "user_name": "Lawton",
+  "capital": "$593.63",
+  "business": "Toys"
+}, {
+  "id": 49,
+  "user_name": "Edan",
+  "capital": "$524.22",
+  "business": "Home"
+}, {
+  "id": 50,
+  "user_name": "Janel",
+  "capital": "$79.44",
+  "business": "Home"
+}]

@@ -1,0 +1,38 @@
+/*
+.kuhusu section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.more{
+   display: flex;
+   flex-direction: column;
+}
+.more h3{
+    margin-left: 200px;
+} */
+.kuhusu {
+    background-color: rgb(172, 165, 165);
+    /* box-sizing: border-box; */
+    height: 80vh;
+    padding: 40px 30px;
+}
+.kuhusu section{
+    background: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 6px;
+    height: 70vh;
+    width: 180vh;
+    margin-left: 60px;
+    /* margin-top: 60px; */
+}
+.info img{
+    height: 70vh;
+    width: 100vh;
+    margin-top: -20px;
+    margin-right: -20px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}

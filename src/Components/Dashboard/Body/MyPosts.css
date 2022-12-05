@@ -1,0 +1,10 @@
+.myposts{
+    /* background-color:darkgrey; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.myposts h2{
+    display: flex;
+    justify-content: center;
+    
+}

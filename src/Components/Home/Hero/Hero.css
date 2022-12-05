@@ -1,0 +1,33 @@
+.hero {
+    background-image: url("../../Common/images/together.jpg");
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.hero .container {
+    padding-top: 10%;
+}
+
+.hero h2 {
+    color: rgb(237, 241, 238);
+    font-size: 60px;
+    text-align: center;
+    opacity: 2.2; 
+}
+
+.hero p {
+    color: rgb(141, 196, 143);
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .hero .container {
+        padding-top: 30%;
+    }
+}

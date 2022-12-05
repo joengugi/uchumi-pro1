@@ -1,0 +1,49 @@
+.featured-background{
+    box-shadow: 0 0 20px 0 rgb(43, 42, 42);
+    border-radius: 6px;
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.featured img{
+    width: 80px;
+    height: 70px;
+    margin: auto;
+}
+
+.steps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    border-radius: 5px;
+    background-color: rgb(221, 218, 218);
+    
+}
+
+.steps img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.steps h4{
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.steps .step1, .step2, .step3{
+    display: block;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.guide h3{
+    font-size: large;
+    font-weight: 600;
+    align-items: center;
+}

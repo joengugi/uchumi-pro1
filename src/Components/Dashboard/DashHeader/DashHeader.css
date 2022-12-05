@@ -1,0 +1,110 @@
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: #373a47;
+}
+
+.bm-burger-bars-hover {
+    background: #a90000;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-menu {
+    background: #373a47;
+    padding: 0.5em 0.5em 0;
+    font-size: 1.15em;
+    /* margin-left: -10px; */
+}
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+.bm-item {
+    display: inline-block;
+    color: #d1d1d1;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.bm-item:hover {
+    color: #ffffff;
+}
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.navbar{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(122, 242, 122);
+    color: #fff;
+}
+
+.nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.search input{
+    box-sizing: border-box;
+    box-shadow: #373a47;
+    width: 40vh;
+    min-height: 5vh;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.navbar ul img{
+    height: 60px;
+    background-color: #fff;
+}
+
+.navbar ul img:hover{
+    background-color: rgb(197, 243, 128);
+}
+
+.navbar ul img:visited{
+    background-color: rgb(197, 243, 128);
+}

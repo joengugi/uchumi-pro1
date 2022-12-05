@@ -1,0 +1,74 @@
+.post{
+    background-color: rgb(247, 247, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    height: 80vh;
+    padding: 50px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    width: 40vh;
+    background-color: beige;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.card-1 h3{
+    color: rgb(119, 163, 119);
+    font-weight: bold;
+}
+.card-2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    background-color: rgb(147, 186, 186);
+    width: 70vh;
+    height: fit-content;
+}
+
+.card-2 form input{
+    width: 45vh;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.card-2 form textarea{
+    height: 200px;
+    width: 300px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 10px;
+    
+}
+.form input select{
+    width: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
