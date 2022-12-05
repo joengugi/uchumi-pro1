@@ -103,6 +103,7 @@ const Signup = () => {
           setName("");
           setPassword("");
           setEmail("");
+          setSelectedFile(null);
       };
 
       const signup_ent=async(event)=>{
@@ -146,6 +147,7 @@ const Signup = () => {
           setName("");
           setPassword("");
           setEmail("");
+          setSelectedFile(null);
       };
 
       const addImageToPost = (e)=> {
