@@ -11,24 +11,24 @@ const Login = () => {
     const navigate = useNavigate();
 
     console.log({user})
-    useEffect(() => {
-        if (loading) {
-            return;
-        }
-        if (user && role === "Entrepreneur") {navigate ("/dashboard")} else if(user && role === "Investor"){navigate("/investor-dash")};
-    }, [loading, navigate, user, role]);
+    // useEffect(() => {
+    //     if (loading) {
+    //         return;
+    //     }
+    //     if (user && role === "Entrepreneur") {navigate ("/dashboard")} else if(user && Role === "Investor"){navigate("/investors")};
+    // }, [loading, navigate, user, role]);
   return (
     <div className='login'>
         <div className = "login-container">
             <form>
 
-                <div className='dropdown'>
+                {/* <div className='dropdown'>
                     <label> Select account type </label>
                     <select value={role} onChange= {(e) => setRole(e.target.value)}>
                         <option >Entrepreneur</option>
                         <option >Investor</option>
                     </select>   
-                </div>
+                </div> */}
                 <input
                     type="email"
                     className = "login-textbox"

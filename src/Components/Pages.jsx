@@ -1,5 +1,5 @@
 import React from 'react'
-// import Header from './Common/Header'
+import Header from './Common/Header'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import GetStarted from './Services/GetStarted'
 import About from './About/About'
@@ -29,7 +29,7 @@ const Pages = () => {
    <>
       <AuthProvider> 
         <Router> 
-        <DashHeader/>
+        <Header/>
           <Routes>
               <Route path='/' element = {<Home/>} />
               <Route path='/get-started' element = {<GetStarted/>}/> 
@@ -46,7 +46,7 @@ const Pages = () => {
               {/* <Route path='/connect' element = {<Connect />} /> */}
               <Route path='/posts' element = {<MyPosts />} />
               <Route path='/fullcard' element = {<Fullcard/>} />
-              <Route path='/investor-dash' element = {<Investors />} />
+              <Route path='/investors' element = {<Investors />} />
               <Route path='/allposts' element = {<Allposts/>} />
           </Routes>
         </Router>

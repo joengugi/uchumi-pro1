@@ -73,6 +73,7 @@ const Signup = () => {
             uid: user.uid,
            username: name,
             authProvider: "local",
+            Role: "Investor",
            email,
     
     
@@ -82,7 +83,7 @@ const Signup = () => {
           await uploadString(imageRef,selectedFile,"data_url").then(
             async snapshot =>{
               const photoURL= await getDownloadURL(imageRef);
-                await updateDoc(doc(db,'users',docRef.id),{
+                await updateDoc(doc(db,'investors',docRef.id),{
     
     
             //   await updateDoc(doc,'posts',docRef.id),{
@@ -99,7 +100,7 @@ const Signup = () => {
           console.error(err);
           alert(err.message);
         }
-          setOpenEntrepreneur(false);
+          setOpenInvestor(false);
           setName("");
           setPassword("");
           setEmail("");
@@ -117,6 +118,7 @@ const Signup = () => {
             uid: user.uid,
            username: name,
             authProvider: "local",
+           Role: "entrepreneur",    
            email,
     
     

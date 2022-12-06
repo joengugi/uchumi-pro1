@@ -19,6 +19,7 @@ import {
 
 } from "firebase/firestore"
 import { getStorage } from "firebase/storage";
+import { Navigate } from "react-router-dom";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBHvoj8dEbLU4n8betfNyxhHnp87bJdaQk",
@@ -79,6 +80,14 @@ const signIn = async (name,email, password ) => {
 const login = async (email, password) => {
     try{
         await signInWithEmailAndPassword(auth, email, password);
+        const q = query(collection(db, "entrepreneur"), where("email", "==", email))
+        const docs = await getDocs(q);
+        if (docs.docs.Role === "Entrepreneur") {
+            Navigate("/dashboard");
+        }else  {
+            Navigate("/investors");
+        }
+
     } catch (err) {
         console.error(err);
         alert(err.message);
